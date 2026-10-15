@@ -1,6 +1,6 @@
 # nurmorix for Homebrew
 
-Native keyboard launcher for macOS (Apple silicon, macOS 14+): Raycast, Rectangle and BetterDisplay in one app. No Electron, no web view.
+Native keyboard launcher for macOS (Apple silicon, macOS 14+): search, AI, clipboard history, window management and display control in one app. No Electron, no web view.
 
 ## Install
 
@@ -26,7 +26,7 @@ brew uninstall --cask --zap nurmorix    # the app and its settings and data
 
 ## Установка через Homebrew
 
-Нативный лаунчер для macOS (Apple silicon, macOS 14+): Raycast, Rectangle и BetterDisplay в одном приложении. Без Electron и веб-вью.
+Нативный лаунчер для macOS (Apple silicon, macOS 14+): поиск, ИИ, история буфера обмена, управление окнами и дисплеями в одном приложении. Без Electron и веб-вью.
 
 ```sh
 brew install --cask nvimq/nurmorix/nurmorix

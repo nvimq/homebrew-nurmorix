@@ -4,7 +4,7 @@ cask "nurmorix" do
 
   url "https://github.com/nvimq/homebrew-nurmorix/releases/download/build-#{version.patch}/nurmorix.app.zip"
   name "nurmorix"
-  desc "Native keyboard launcher: Raycast, Rectangle and BetterDisplay in one app"
+  desc "Native keyboard launcher, window manager and display control"
   homepage "https://github.com/nvimq/homebrew-nurmorix"
 
   livecheck do
@@ -20,15 +20,17 @@ cask "nurmorix" do
 
   auto_updates true
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "nurmorix.app"
 
   # The build is signed with the project's own certificate, not notarized:
   # without this macOS would refuse to open the downloaded copy.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/nurmorix.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:           ["-dr", "com.apple.quarantine", "{{appdir}}/nurmorix.app"],
+        writable_paths: ["nurmorix.app"],
+        writable_base:  :appdir
   end
 
   uninstall quit: "dev.nvimq.nurmorix"
