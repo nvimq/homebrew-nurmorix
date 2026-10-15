@@ -1,5 +1,7 @@
 # nurmorix for Homebrew
 
+> **Public downloads are paused.** nurmorix is proprietary software; public builds are withdrawn while the codebase is being cleaned of third-party code under incompatible licenses. The cask below will not resolve until builds are published again.
+
 Native keyboard launcher for macOS (Apple silicon, macOS 14+): search, AI, clipboard history, window management and display control in one app. No Electron, no web view.
 
 ## Install
