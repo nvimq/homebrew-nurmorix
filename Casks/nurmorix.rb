@@ -23,6 +23,7 @@ cask "nurmorix" do
   depends_on macos: :sonoma
 
   app "nurmorix.app"
+  binary "#{appdir}/nurmorix.app/Contents/MacOS/nurmorix"
 
   # The build is signed with the project's own certificate, not notarized:
   # without this macOS would refuse to open the downloaded copy.
