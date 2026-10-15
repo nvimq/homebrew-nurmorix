@@ -1,6 +1,6 @@
 cask "nurmorix" do
-  version "0.1.327"
-  sha256 "8c51f9e659eaa6afa84286b61def8fee87b10f5eed52e5c120d6606f624b40a5"
+  version "0.1.331"
+  sha256 "67a66b90eb72a6f81d1bf0c5a8e87ac502c8aab1d01b4d4dd5e24cf2c4da05c0"
 
   url "https://github.com/nvimq/homebrew-nurmorix/releases/download/build-#{version.patch}/nurmorix.app.zip"
   name "nurmorix"
